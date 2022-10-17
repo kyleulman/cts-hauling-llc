@@ -1,0 +1,45 @@
+:root {
+	--clr-primary: 230 100% 20%; /* #001166; */
+	--clr-secondary: 203 78% 70%;
+	--clr-background: 209 45% 86%;
+}
+
+body {
+	background-image: url('/cardboard.png');
+	background-color: hsl(var(--clr-background));
+	font-family: 'Nunito', sans-serif;
+	color: hsl(var(--clr-primary));
+	font-size: 1.25rem;
+}
+
+a {
+	color: hsl(var(--clr-primary));
+}
+
+header,
+main {
+	margin: auto;
+	padding: 2rem 0;
+}
+
+.button {
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid hsl(var(--clr-primary));
+	padding: 0.33em 1em;
+	border-radius: 1em;
+	font-weight: 600;
+	text-align: center;
+	transition: background-color 300ms, color 300ms;
+	overflow-wrap: break-word;
+}
+
+.button:hover {
+	color: hsl(var(--clr-background));
+	background: hsl(var(--clr-primary));
+}
+
+.auth-form {
+	margin: auto;
+	max-width: 25rem;
+}

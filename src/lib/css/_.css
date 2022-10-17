@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+}
+
+body {
+	margin: 0;
+}
+
+sub,
+sup {
+	/* Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+textarea {
+	resize: none;
+}
+
+small {
+	font-size: 0.8em;
+}
+
+/* Remove animations if user has turned them off */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
